@@ -12,3 +12,5 @@
 1. 처음 방문하면 로컬 스토리지에 불러온 사진 갯수 크기의 배열을 생성하고 모두 미클리어(0) 상태로 저장한다.
 2. 미클리어한 곡(투명도:1)을 클릭하면 opacity가 흐려지며, 배열[id-1]의 상태는 클리어(1)로 바뀐다. 반대로 클리어한 곡을 클릭하면 opacity가 1로 돌아오며 배열[id-1]의 상태는 미클리어(0)로 바뀐다.
 3. 재방문할 때는 초기화 없이 로컬 스토리지에 저장된 기존 데이터를 갖고와서 클리어 상태로 돌린다.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b6a0a735-6736-41b5-938f-98e32adbbbe6/deploy-status)](https://app.netlify.com/sites/jovial-raindrop-0cec21/deploys)
