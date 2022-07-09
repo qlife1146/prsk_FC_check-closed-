@@ -19,7 +19,7 @@ function img_load() {
 			document.write("<img class='0' id="+i+" src='https://minio.dnaroma.eu/sekai-assets/music/jacket/jacket_s_" + iSet + "_rip/jacket_s_" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 			console.log(document.getElementById(i));
 		} catch(e) {
-			console.log(e);
+			console.log("ERROR");
 		} finally {
 			
 		}
