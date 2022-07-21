@@ -80,5 +80,8 @@ function upload() {
 				iSet = i;
 		 }
 		document.write("<img class='0' id= "+ i +" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
+		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
+		console.log(iSet)
+		console.log(i)
 	}
 }
