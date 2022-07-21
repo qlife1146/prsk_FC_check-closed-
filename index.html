@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
    <script>
-      var enter = getCookie("enter_before");
-      if (enter == "") {
-         document.cookie = "enter_before=1"
-         console.log("IF");
+      setCookie("enter","on","7");
+      var check = getCookie("enter");
+      if(check == "") {
+         console.log("on");
       } else {
-         console.log("ELSE");
+         console.log("off");
       }
    </script>
    <head>
