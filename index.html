@@ -30,7 +30,15 @@
       <script src="prsk.jsp"></script>
       <link rel="stylesheet" href="prsk_css.css" type="text/css">
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js">
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+   </head>
+   <body>
+   </body>
+   <body onload="upload();">
+   </body>
+   <body>
+      <py-script src="prsk_py.py"></py-script>
+      <py-script>
          import os
          import cv2
 
@@ -46,14 +54,6 @@
              color = cv2.imread(path, cv2.IMREAD_COLOR)
              cv2.imshow("image", color)
              cv2.waitKey(0)
-      </script>
-   </head>
-   <body>
-      <h1>Hello World!</h1>
-   </body>
-   <body onload="upload();">
-   </body>
-   <body>
-      <py-script src="prsk_py.py"></py-script>
+      </py-script>
    </body>
 </html>
