@@ -23,11 +23,11 @@ while i < max:
     #이미지 url
   url = "https://minio.dnaroma.eu/sekai-assets/music/jacket/jacket_s_" + url_i + "_rip/jacket_s_" + url_i + ".webp"
   
-  if os.path.exists("/Users/luca/vscode/html/prsk_FC_check/prsk/img/" + url_i + ".webp"):
+  if os.path.exists("./img/" + url_i + ".webp"):
     continue
   else:
     #이미지 다운로드
-    os.system("curl " + url + " > /Users/luca/vscode/html/prsk_FC_check/prsk/img/" + url_i + ".webp")
-    img_size = os.path.getsize(r'/Users/luca/vscode/html/prsk_FC_check/prsk/img/' + url_i + ".webp")
+    os.system("curl " + url + " > ./img/" + url_i + ".webp")
+    img_size = os.path.getsize(r'./img/' + url_i + ".webp")
     if img_size < 400:
-      os.remove('/Users/luca/vscode/html/prsk_FC_check/prsk/img/' + url_i + ".webp")
+      os.remove('./img/' + url_i + ".webp")
