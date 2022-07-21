@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
    <script>
-      document.cookie = "enter_before=1";
+      if(!document.cookie.match(enter_before)) {
+         document.cookie = "enter_before=1";
+      } else {
+         document.cookie = "enter_before=0";
+      }
    </script>
    <head>
       <meta charset="utf-8">
