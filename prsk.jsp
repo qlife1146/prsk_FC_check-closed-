@@ -55,10 +55,20 @@ function img_load() {
 	}
 -->
 
-<!-- function array_gen() {
-	imgArray = new Array();
-	for (i = 1; i < )
-} -->
+function array_gen() {
+<%
+	File dirFile=new File('./img/');
+	File []fileList=dirFile.listFiles();
+	for(File tempFile : fileList) {
+  		if(tempFile.isFile()) {
+    		String tempPath=tempFile.getParent();
+    		String tempFileName=tempFile.getName();
+    		System.out.println("Path="+tempPath);
+    		System.out.println("FileName="+tempFileName);
+		}
+	}
+%>
+}
 
 function changeStyle(i) {
 	var element = document.getElementById(i);

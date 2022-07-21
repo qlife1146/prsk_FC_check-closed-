@@ -29,26 +29,9 @@
       <meta charset="utf-8">
       <script src="prsk.jsp"></script>
       <link rel="stylesheet" href="prsk_css.css" type="text/css">
-      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
    </head>
-   <body>
-   </body>
    <body onload="upload();">
    </body>
    <body>
-      <py-script src="prsk_py.py"></py-script>
-      <py-script>
-         import os
-         import cv2
-
-         path = './img'
-         os.chdir(path)
-         files = os.listdir(os.getcwd())
-         files.sort()
-         dir = os.getcwd()
-         print(dir)
-         print(files)
-      </py-script>
    </body>
 </html>
