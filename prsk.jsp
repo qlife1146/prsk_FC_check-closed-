@@ -71,7 +71,7 @@ function changeStyle(i) {
 
 function upload() {
 	var iSet = '';
-	for(var i = 1, i < 301, i++) {
+	for(var i = 1; i < 301; i++) {
 		 if (i < 10) {
 				iSet = '00' + i;
 		 } else if (i < 100) {
@@ -79,7 +79,6 @@ function upload() {
 		 } else {
 				iSet = i;
 		 }
-		document.write("<img class='0' id= "+ i +" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 		console.log(iSet)
 		console.log(i)
