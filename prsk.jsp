@@ -55,34 +55,6 @@ function img_load() {
 	}
 -->
 
-function array_gen() {
-<%
-	File dirFile=new File('./img/');
-	File []fileList=dirFile.listFiles();
-	for(File tempFile : fileList) {
-  		if(tempFile.isFile()) {
-    		String tempPath=tempFile.getParent();
-    		String tempFileName=tempFile.getName();
-    		System.out.println("Path="+tempPath);
-    		System.out.println("FileName="+tempFileName);
-		}
-	}
-%>
-}
-
-function changeStyle(i) {
-	var element = document.getElementById(i);
-	var opa = element.className;
-	
-	if (opa == 0) {
-		element.style.opacity = 0.2;
-		element.className = 1;
-	} else {
-		element.style.opacity = 1.0;
-		element.className = 0;
-	}
-}
-
 function upload() {
 	var iSet = '';
 	for(var i = 1; i < 301; i++) {
@@ -96,3 +68,4 @@ function upload() {
 		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 	}
 }
+
