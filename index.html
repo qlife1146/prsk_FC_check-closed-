@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
    <script>
-      if(!document.cookie.match(enter_before)) {
-         document.cookie = "enter_before=1";
-         console.log("FALSE");
+      var enter = getCookie("enter_before");
+      if (enter == "") {
+         document.cookie = "enter_before=1"
+         console.log("IF");
       } else {
-         console.log("TRUE");
+         console.log("ELSE");
       }
    </script>
    <head>
