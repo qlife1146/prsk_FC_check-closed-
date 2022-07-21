@@ -3,12 +3,6 @@
    <script>
       setCookie("enter","on","7");
       var check = getCookie("enter");
-      if(check == "") {
-         console.log("on");
-      } else {
-         console.log("off");
-      }
-
       function setCookie(cName, cValue, cDay){
          var expire = new Date();
          expire.setDate(expire.getDate() + cDay);
@@ -31,6 +25,7 @@
          return unescape(cValue);
       }
    </script>
+   <py-script src="prsk_py.py"></py-script>
    <head>
       <meta charset="utf-8">
       <script src="prsk.jsp"></script>
