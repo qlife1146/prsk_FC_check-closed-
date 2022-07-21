@@ -30,7 +30,23 @@
       <script src="prsk.jsp"></script>
       <link rel="stylesheet" href="prsk_css.css" type="text/css">
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <script defer src="https://pyscript.net/alpha/pyscript.js">
+         import os
+         import cv2
+
+         path = './img'
+         os.chdir(path)
+         files = os.listdir(os.getcwd())
+         files.sort()
+         dir = os.getcwd()
+         print(dir)
+
+         for i in os.listdir('./'):
+             path = './' + i
+             color = cv2.imread(path, cv2.IMREAD_COLOR)
+             cv2.imshow("image", color)
+             cv2.waitKey(0)
+      </script>
    </head>
    <body>
       <h1>Hello World!</h1>
