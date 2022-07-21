@@ -72,13 +72,17 @@ function changeStyle(i) {
 function upload() {
 	var iSet = '';
 	for(var i = 1; i < 301; i++) {
-		 if (i < 10) {
+		if (i < 10) {
 				iSet = '00' + i;
-		 } else if (i < 100) {
+		} else if (i < 100) {
 				iSet = '0' + i;
-		 } else {
+		} else {
 				iSet = i;
-		 }
+		}
+		let path = './img/' + iSet + '.webp';
+		let fs = require('fs');
+		let res = fs.existSync(path);
+		console.log(res);
 		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 		console.log(iSet)
 		console.log(i)
