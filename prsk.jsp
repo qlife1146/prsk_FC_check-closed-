@@ -39,8 +39,6 @@ function img_load() {
 	} 
 }
 -->
-
-
 <!--
 	function inStorage(music_length) {
 		var checkArray = new Array();
@@ -56,6 +54,11 @@ function img_load() {
 		}
 	}
 -->
+
+function cookie_check() {
+	console.log(document.cookie);
+}
+
 function changeStyle(i) {
 	var element = document.getElementById(i);
 	var opa = element.className;
@@ -79,10 +82,6 @@ function upload() {
 		} else {
 				iSet = i;
 		}
-		let path = './img/' + iSet + '.webp';
-		let fs = require('fs');
-		let res = fs.existSync(path);
-		console.log(res);
 		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 		console.log(iSet)
 		console.log(i)
