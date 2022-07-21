@@ -69,3 +69,15 @@ function upload() {
 	}
 }
 
+function changeStyle(i) {
+	var element = document.getElementById(i);
+	var opac = element.className;
+
+	if (opac == 0) {
+		element.style.opacity = 0.2;
+		element.className = 1;
+	} else {
+		element.style.opacity = 1.0;
+		element.className = 0;
+	}
+}
