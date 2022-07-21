@@ -79,6 +79,6 @@ function upload() {
 		 } else {
 				iSet = i;
 		 }
-		document.write("<img id= "+i+" src='./img" + iSet + "_rip/jacket_s_" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
+		document.write("<img class='0' id= "+ i +" src='./img" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
 	}
 }
