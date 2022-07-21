@@ -3,8 +3,9 @@
    <script>
       if(!document.cookie.match(enter_before)) {
          document.cookie = "enter_before=1";
+         console.log("FALSE");
       } else {
-         document.cookie = "enter_before=0";
+         console.log("TRUE");
       }
    </script>
    <head>
