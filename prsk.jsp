@@ -56,8 +56,7 @@ function img_load() {
 -->
 
 function cookie_check() {
-	document.cookie = "enter_before";
-	alert(document.cookie);
+	document.cookie = "enter_before=1";
 }
 
 function changeStyle(i) {
