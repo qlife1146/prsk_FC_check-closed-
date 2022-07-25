@@ -30,7 +30,8 @@ function init_zero() {
 //onclick 기능. 사진의 반투명 토글 기능
 function changeStyle(i) {
 	var element = document.getElementById(i);
-
+	var opac = element.className;
+	
 	//클리어가 아니면 클리어로
 	if (opac == 0) {
 		element.style.opacity = 0.2;
