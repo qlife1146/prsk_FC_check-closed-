@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html>
-   <script>
-      setCookie("enter","on","7");
-      var check = getCookie("enter");
-      function setCookie(cName, cValue, cDay){
-         var expire = new Date();
-         expire.setDate(expire.getDate() + cDay);
-         cookies = cName + '=' + escape(cValue) + '; path=/ ';
-         if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
-         document.cookie = cookies;
-      }
-      
-      function getCookie(cName) {
-         cName = cName + '=';
-         var cookieData = document.cookie;
-         var start = cookieData.indexOf(cName);
-         var cValue = '';
-         if(start != -1){
-            start += cName.length;
-            var end = cookieData.indexOf(';', start);
-            if(end == -1)end = cookieData.length;
-            cValue = cookieData.substring(start, end);
-         }
-         return unescape(cValue);
-      }
-   </script>
-   <head>
-      <meta charset="utf-8">
-      <script src="prsk.jsp"></script>
-      <link rel="stylesheet" href="prsk_css.css" type="text/css">
-   </head>
-   <body onload="upload();">
-   </body>
-   <body>
-   </body>
+	<head>
+		<meta charset="utf-8">
+		<title>프로세카 풀콤 기록표</title>
+		<link rel="stylesheet" href="prsk_css.css" type="text/css">
+		<script src="prsk.jsp"></script>
+	</head>
+
+<!-- <body onload="upload();"></body> -->
+
+<bod beforeunload="save_arr()">
+	<script>
+		document.addEventListener("DOMContentLoaded", upload());
+		window.addEventListener
+	</script>
+	<button onclick="init_arr()">초기화</button>
+	<button onclick="save()">저장</button>
+	<button onclick="debug()">디버그</button>
+</body>
+<h1>H1</h1>
 </html>
