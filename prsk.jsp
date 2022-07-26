@@ -13,7 +13,7 @@ function upload() {
 			iSet=i;
 		}
 		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
-		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")' onerror=\"this.style.display='none'\">");
+		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
 		arr.push(i);
 	}
 	def_length = arr.length;
@@ -45,11 +45,6 @@ function changeStyle(i) {
 	}
 }
 
-//엑박을 지우기 위한 테스트 기능
-function noImage() {
-	
-}
-
 //디버그용 콘솔 로그
 function debug() {
 	var output = localStorage.getItem("save_arr_key");
@@ -74,7 +69,8 @@ function init_arr() {
 
 //저장. 로컬 스토리지에 배열 저장.
 function save() {
-	localStorage.setItem("save_arr_key", save_arr);	
+	localStorage.setItem("save_arr_key", save_arr);
+	console.log("SUCCESS");	
 }
 
 
@@ -98,6 +94,7 @@ function opacity_to_one(i) {
 
 	element.style.opacity = 0.2;
 	element.className = 1;
+	save_arr[i] = 1;
 }
 
 function opacity_to_zero(i) {
@@ -105,4 +102,5 @@ function opacity_to_zero(i) {
 
 	element.style.opacity = 1.0;
 	element.className = 0;
+	save_arr[i] = 0;
 }
