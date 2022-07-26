@@ -12,7 +12,8 @@ function upload() {
 		} else {
 			iSet=i;
 		}
-		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
+		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
+		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")' onerror=\"this.style.display='none'\">");
 		arr.push(i);
 	}
 	def_length = arr.length;
@@ -46,7 +47,7 @@ function changeStyle(i) {
 
 //엑박을 지우기 위한 테스트 기능
 function noImage() {
-	console.log("imgERROR");
+	
 }
 
 //디버그용 콘솔 로그
@@ -81,12 +82,12 @@ function save() {
 function readCheck() {
 	var output = localStorage.getItem("save_arr_key");
 	for (var a = 2; a < def_length*2; a=a+2) {
-		console.log(output[a]);
+		// console.log(output[a]);
 		if (output[a] == "1") {
 			opacity_to_one(a/2);
-			console.log(output[a]);
+			// console.log(output[a]);
 		} else {
-			console.log(output[a]);
+			// console.log(output[a]);
 		}
 	}
 }
