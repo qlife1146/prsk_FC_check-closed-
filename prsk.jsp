@@ -12,8 +12,19 @@ function upload() {
 		} else {
 			iSet=i;
 		}
-		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + ")'>");
-		document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
+		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
+		// document.write("<img class='_"+i+"' src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
+
+		var x = document.createElement("img");
+		var iVar = './img/' + iSet + '.webp';
+		x.setAttribute("src", iVar);
+		x.setAttribute("id", i);
+		x.setAttribute("class", "_"+i);
+		x.setAttribute("onclick", 'changeStyle('+i+'); save()');
+		x.setAttribute("onerror", "this.style.display='none'");
+		x.setAttribute("style", "opacity: 1");
+		document.body.appendChild(x);
+		
 		arr.push(i);
 	}
 	def_length = arr.length;
@@ -34,13 +45,13 @@ function changeStyle(i) {
 	var opac = element.className;
 	
 	//클리어가 아니면 클리어로
-	if (opac == 0) {
+	if (element.style.opacity == 1.0) {
 		element.style.opacity = 0.2;
-		element.className = 1;
+		//element.className = 1;
 		save_arr[i] = 1;
 	} else { //클리어면 클리어 아닌 걸로
 		element.style.opacity = 1.0;
-		element.className = 0;
+		//element.className = 0;
 		save_arr[i] = 0;
 	}
 }
@@ -65,6 +76,7 @@ function init_arr() {
 		opacity_to_zero(a);
 		save_arr[a] = 0;
 	}
+	save();
 }
 
 //저장. 로컬 스토리지에 배열 저장.
@@ -91,9 +103,8 @@ function readCheck() {
 //이하 투명도 토글 기능
 function opacity_to_one(i) {
 	var element = document.getElementById(i);
-
 	element.style.opacity = 0.2;
-	element.className = 1;
+	//element.className = 1;
 	save_arr[i] = 1;
 }
 
@@ -101,6 +112,6 @@ function opacity_to_zero(i) {
 	var element = document.getElementById(i);
 
 	element.style.opacity = 1.0;
-	element.className = 0;
+	//element.className = 0;
 	save_arr[i] = 0;
 }
