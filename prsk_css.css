@@ -15,7 +15,9 @@ img {
 
 .container > * {
 	background-color: blueviolet;
-	font-size: 10px;
+	font-size: 13px;
+	color: white;
+	font-weight: bold;
 	/* grid-gap: 3px; */
 }
 
