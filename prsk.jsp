@@ -15,6 +15,7 @@ function upload() {
 		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
 		// document.write("<img class='_"+i+"' src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
 
+		var m = document.getElementById("music");
 		var x = document.createElement("img");
 		var iVar = './img/' + iSet + '.webp';
 		x.setAttribute("src", iVar);
@@ -23,7 +24,7 @@ function upload() {
 		x.setAttribute("onclick", 'changeStyle('+i+'); save()');
 		x.setAttribute("onerror", "this.style.display='none'");
 		x.setAttribute("style", "opacity: 1");
-		document.body.appendChild(x);
+		m.appendChild(x);
 		
 		arr.push(i);
 	}
