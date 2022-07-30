@@ -1,8 +1,4 @@
 @media (orientation: portrait) {
-	#music > img {
-		width: 15%;
-	}
-
 	.container {
 		display: grid;
 		grid-auto-columns: 1fr;
