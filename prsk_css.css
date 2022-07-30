@@ -1,6 +1,6 @@
 @media (orientation: portrait) {
-	img {
-		/* width: 100%; */
+	#music > img {
+		width: 15%;
 	}
 
 	.container {
