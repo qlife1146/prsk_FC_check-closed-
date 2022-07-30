@@ -1,1750 +1,3563 @@
-img {
-	width: 100%;
-	/* position: absolute; */
-}
-
-.container {
-	display: grid;
-	grid-auto-columns: 1fr;
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
-	grid-template-areas:
-		"logo level"
-		"skill music";
-}
-
-.container > * {
-	background-color: blueviolet;
-	font-size: 13px;
-	color: white;
-	font-weight: bold;
-	/* grid-gap: 3px; */
-}
-
-.container > music {
-	background-color: wheat;
-}
-
-.container > level {
-	text-align: center;
-	vertical-align: middle;
-}
-
-logo {
-	grid-area: logo;
-}
-
-level {
-	display: grid;
-	grid-template-columns: repeat(33, 1fr);
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas:
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
-
-	grid-area: level;
-}
-
-skill {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(19, 1fr);
-	gap: 0px 0px;
-	grid-template-areas:
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		"."
-		".";
-	grid-area: skill;
-}
-
-music {
-	display: grid;
-	grid-template-columns: repeat(33, 1fr);
-	grid-template-rows: repeat(19, 1fr);
-	gap: 0px 0px;
-	grid-template-areas:
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
-		". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
-	grid-area: music;
-}
-
-/* 텔 유어 월드 */
-._1 {
-	/* 가로 */
-	grid-column-start: 33;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 로키 */
-._2 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 테오 */
-._3 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 불꽃 */
-._6 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 타임머신 */
-._8 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 해피 신시사이저 */
-._10 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 비바해피 */
-._11 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 노스탤로직 */
-._13 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 드롭 팝 캔디 */
-._15 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 내일의 별하늘 초계반 */
-._18 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 18;
-}
-
-/* 샤를 */
-._19 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 탈법록 */
-._21 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 생명에게 미움받고 있어 */
-._22 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 열등상등 */
-._26 {
-	/* 가로 */
-	grid-column-start: 13;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 그냥 친구로 지내자 */
-._27 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 닥터 펑크 비트 */
-._28 {
-	/* 가로 */
-	grid-column-start: 7;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 미라클 페인트 */
-._36 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 브리키의 댄스 */
-._38 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 스위트 매직 */
-._41 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 넥스트 네스트 */
-._43 {
-	/* 가로 */
-	grid-column-start: 16;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 손에 손 잡고 */
-._44 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 삼구뮤직 */
-._45 {
-	/* 가로 */
-	grid-column-start: 26;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 그린 라이츠 세레나데 */
-._46 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 멜트 */
-._47 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 월드 이즈 마인 */
-._48 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 하츠네 미쿠의 소실 */
-._49 {
-	/* 가로 */
-	grid-column-start: 2;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 블레싱 */
-._50 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 세카이는 아직 시작조차 하지 않았다 */
-._51 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 감자가 되어가 */
-._52 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 레디 스테디 */
-._54 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 포워드 */
-._55 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 아이돌 신예대 */
-._57 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 후회라 쓰고 미래 */
-._60 {
-	/* 가로 */
-	grid-column-start: 13;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 휴대연화 */
-._61 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 잭팟 새드걸 */
-._62 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 니들 */
-._63 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 스텔라 */
-._64 {
-	/* 가로 */
-	grid-column-start: 14;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 헬로/하와유 */
-._66 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 자상무색 */
-._67 {
-	/* 가로 */
-	grid-column-start: 32;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 댄스 로봇 댄스 */
-._68 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 취급주의 */
-._69 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 멜티랜드 나이트메어 */
-._70 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 누덕누덕 스타카토 */
-._71 {
-	/* 가로 */
-	grid-column-start: 26;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 블레스 유어 블레스 */
-._72 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 니아 */
-._73 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 혼자 놀이 엔비 */
-._74 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 갯나리 해저담 */
-._75 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 세카이 */
-._76 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 워워워월드 */
-._77 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 모험의 서가 사라졌어요! */
-._78 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 야화 디세이브 */
-._81 {
-	/* 가로 */
-	grid-column-start: 13;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 어라이브 */
-._82 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 김미 김미 */
-._83 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 정키 나이트타운 오케스트라 */
-._84 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 레이아 */
-._85 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 온더락 */
-._86 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 연애재판 */
-._87 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 츄루리라 */
-._88 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 컬러 오브 드롭스 */
-._89 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 끝없는 잿빛으로 */
-._90 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 드라마트루기 */
-._91 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 소녀해부 */
-._92 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 푸르게 달려라! */
-._93 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 존나 아파 */
-._94 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 위풍당당 */
-._95 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 와이가 와이에게 */
-._96 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 맑기를 기다려 */
-._97 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 로스트원의 호곡 */
-._98 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 모어! 점프! 모어! */
-._99 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 에코 */
-._100 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 래드 독스*/
-._101 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 유령 도쿄 */
-._102 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 무지개색 스토리즈 */
-._103 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 상드리용 */
-._104 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 원스 어폰 어 드림 */
-._105 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 원하시는 대로 */
-._106 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 밀크 크라운 온 소네치카 */
-._107 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 사랑받지 않아도 네가 있어 */
-._108 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 울려퍼져라 */
-._109 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 천본앵 */
-._110 {
-	/* 가로 */
-	grid-column-start: 7;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 커틀러리 */
-._111 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 2;
-}
-
-/* 천사의 클로버 */
-._112 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 롤링걸 */
-._113 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 겉속 러버즈 */
-._114 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 언노운 마더 구스 */
-._115 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 아이디스마일 */
-._116 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 오즈 앤드 엔즈 */
-._117 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 핼로 플래닛 */
-._118 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 월즈 앤드 댄스홀 */
-._119 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 가지 마 */
-._120 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 로미오와 신데렐라 */
-._121 {
-	/* 가로 */
-	grid-column-start: 26;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 포지티브 댄스 타임 */
-._122 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 드리밍 츄츄 */
-._123 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 미쿠미쿠하게 해줄게 */
-._124 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 보카 델라 베리타 */
-._125 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 시네마 */
-._126 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 톤데모 원더즈 */
-._127 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 브랜드 뉴 데이 */
-._128 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 비터 초코 데코레이션 */
-._129 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 프롬 도쿄 */
-._130 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 하츠네 미쿠의 격창 */
-._131 {
-	/* 가로 */
-	grid-column-start: 4;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* '일' */
-._132 {
-	/* 가로 */
-	grid-column-start: 32;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 악마의 춤추는 법 */
-._133 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 텔레캐스터 비보이 */
-._134 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 육조년과 하룻밤 이야기 */
-._135 {
-	/* 가로 */
-	grid-column-start: 3;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 칠드런 레코드 */
-._136 {
-	/* 가로 */
-	grid-column-start: 7;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 꽃을 노래해 */
-._137 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 킹 */
-._138 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 밤에 달리다 */
-._139 {
-	/* 가로 */
-	grid-column-start: 16;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 아이스 드롭 */
-._140 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 군청찬가 */
-._141 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 14;
-}
-
-/* 재생 */
-._142 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 트래픽 잼 */
-._143 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 사랑의 머태리얼 */
-._144 {
-	/* 가로 */
-	grid-column-start: 32;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 베놈 */
-._145 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 리모컨 */
-._146 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 6;
-}
-
-/* 꼭두각시 피에로 */
-._147 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 레이 */
-._148 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 연주하여 밝히는 하늘 */
-._149 {
-	/* 가로 */
-	grid-column-start: 32;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 토키오 펑카 */
-._150 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 거품미래 */
-._151 {
-	/* 가로 */
-	grid-column-start: 16;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 누군가의 심장이 될 수 있다면 */
-._152 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 미쿠 */
-._153 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 지구 최후의 고백을 */
-._154 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 심박수#0822 */
-._155 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 비트 이터 */
-._156 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 14;
-}
-
-/* 마슈마리 */
-._157 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 넌센스 문학 */
-._158 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 스테이지 오브 세카이 */
-._159 {
-	/* 가로 */
-	grid-column-start: 13;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 쇼타임 룰러 */
-._160 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 매직 넘버 */
-._161 {
-	/* 가로 */
-	grid-column-start: 15;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 엔드마크에 희망과 눈물을 붙여서 */
-._162 {
-	/* 가로 */
-	grid-column-start: 2;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 더 엠퍼러 */
-._163 {
-	/* 가로 */
-	grid-column-start: 1;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 돈 파이트 더 뮤직 */
-._164 {
-	/* 가로 */
-	grid-column-start: 1;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 그랬지! */
-._165 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 글로리 스테디 고! */
-._166 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 얼터 에고 */
-._167 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 달링 댄스 */
-._168 {
-	/* 가로 */
-	grid-column-start: 14;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 소녀 레이 */
-._169 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 빌런 */
-._170 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 아지랑이 데이즈 */
-._171 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 해피 할로윈 */
-._172 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 유성의 파루스 */
-._173 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 이 얼 팬클럽 */
-._174 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 친애하는 도플갱어 */
-._175 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 머신건 포엠 돌 */
-._176 {
-	/* 가로 */
-	grid-column-start: 3;
-	/* 세로 */
-	grid-row-start: 16;
-}
-
-/* 우견의 나비 */
-._177 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 닛코리 조사대의 테마 */
-._178 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 노심융해 */
-._179 {
-	/* 가로 */
-	grid-column-start: 26;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 미래 */
-._180 {
-	/* 가로 */
-	grid-column-start: 24;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해 */
-._181 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 플라이어 */
-._182 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 픽서 */
-._183 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 헬로, 월드 */
-._184 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 식 오브 하우스! */
-._185 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 하츠네 천지 개벽 신화 */
-._186 {
-	/* 가로 */
-	grid-column-start: 5;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 로워 */
-._187 {
-	/* 가로 */
-	grid-column-start: 9;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 마음예보 */
-._188 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 노마드 */
-._189 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 악의 딸 */
-._190 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 악의 하인 */
-._191 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 떠나는 이들의 왈츠 */
-._192 {
-	/* 가로 */
-	grid-column-start: 25;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 월드와이드 원더 */
-._193 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 망상감상대상연맹 */
-._194 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 패셔넷 쓰리 닷 센세이션 */
-._195 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 오더 메이드 */
-._196 {
-	/* 가로 */
-	grid-column-start: 31;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 라스트 스코어 */
-._197 {
-	/* 가로 */
-	grid-column-start: 12;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 굿바이 선언 */
-._198 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 고스트 룰 */
-._199 {
-	/* 가로 */
-	grid-column-start: 5;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 갈란드 */
-._200 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 신의 뜻대로 */
-._201 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 트리콜로주 */
-._203 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 시끄럿 */
-._204 {
-	/* 가로 */
-	grid-column-start: 22;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 춤 */
-._205 {
-	/* 가로 */
-	grid-column-start: 19;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 너의 색 마린 스노우 */
-._206 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 피키피키 */
-._207 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 우린 아직 언더그라운드 */
-._208 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 메타모 리본 */
-._209 {
-	/* 가로 */
-	grid-column-start: 33;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 비와 페트라 */
-._210 {
-	/* 가로 */
-	grid-column-start: 20;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 이프 */
-._211 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 별하늘의 멜로디 */
-._212 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 뱀파이어 */
-._213 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 쥬다스 */
-._215 {
-	/* 가로 */
-	grid-column-start: 23;
-	/* 세로 */
-	grid-row-start: 3;
-}
-
-/* 루카루카 나이트피버 */
-._216 {
-	/* 가로 */
-	grid-column-start: 18;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 메류 */
-._218 {
-	/* 가로 */
-	grid-column-start: 30;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 모래행성 */
-._219 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 도넛 홀 */
-._220 {
-	/* 가로 */
-	grid-column-start: 16;
-	/* 세로 */
-	grid-row-start: 12;
-}
-
-/* 마트료시카 */
-._221 {
-	/* 가로 */
-	grid-column-start: 14;
-	/* 세로 */
-	grid-row-start: 17;
-}
-
-/* 피아노 포르테 스캔들 */
-._222 {
-	/* 가로 */
-	grid-column-start: 14;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 천년의 독주가 */
-._223 {
-	/* 가로 */
-	grid-column-start: 28;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 88별 */
-._224 {
-	/* 가로 */
-	grid-column-start: 16;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 원셀프 */
-._227 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 뇌장작렬걸 */
-._229 {
-	/* 가로 */
-	grid-column-start: 6;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 샐러맨더 */
-._230 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 11;
-}
-
-/* 아이덴티티 */
-._231 {
-	/* 가로 */
-	grid-column-start: 11;
-	/* 세로 */
-	grid-row-start: 13;
-}
-
-/* 파란 물감 */
-._232 {
-	/* 가로 */
-	grid-column-start: 29;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 코스모 스파이스 */
-._233 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 7;
-}
-
-/* 도쿠가와 컵누들 금지령 */
-._234 {
-	/* 가로 */
-	grid-column-start: 8;
-	/* 세로 */
-	grid-row-start: 8;
-}
-
-/* 검은 바위 투척수 */
-._238 {
-	/* 가로 */
-	grid-column-start: 27;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 월광 */
-._239 {
-	/* 가로 */
-	grid-column-start: 17;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 나팔꽃 질 무렵에 */
-._241 {
-	/* 가로 */
-	grid-column-start: 33;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 어웨이크 나우 */
-._244 {
-	/* 가로 */
-	grid-column-start: 13;
-	/* 세로 */
-	grid-row-start: 4;
-}
-
-/* 아훔의 비트 */
-._245 {
-	/* 가로 */
-	grid-column-start: 21;
-	/* 세로 */
-	grid-row-start: 1;
-}
-
-/* 버그 */
-._248 {
-	/* 가로 */
-	grid-column-start: 7;
-	/* 세로 */
-	grid-row-start: 10;
-}
-
-/* 우리들의 16비트 전쟁 */
-._249 {
-	/* 가로 */
-	grid-column-start: 4;
-	/* 세로 */
-	grid-row-start: 9;
-}
-
-/* 미완성찬가 */
-._254 {
-	/* 가로 */
-	grid-column-start: 10;
-	/* 세로 */
-	grid-row-start: 13;
+@media (orientation: portrait) {
+	img {
+		/* width: 100%; */
+	}
+
+	.container {
+		display: grid;
+		grid-auto-columns: 1fr;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"logo skill"
+			"level music";
+		
+	}
+
+	.container>* {
+		background-color: blueviolet;
+		font-size: 13px;
+		color: white;
+		font-weight: bold;
+		/* grid-gap: 3px; */
+		align-items: center;
+	}
+
+	.container>level {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.container>skill {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.container>music {
+		background-color: wheat;
+	}
+
+	logo {
+		grid-area: logo;
+	}
+
+	skill {
+		display: grid;
+		grid-template-columns: repeat(19, 1fr);
+		grid-template-rows: 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+			". . . . . . . . . . . . . . . . . . .";
+		grid-area: skill;
+	}
+
+	level {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(33, 1fr);
+		gap: 0px 0px;
+		grid-template-areas:
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			".";
+		grid-area: level;
+	}
+
+	music {
+		display: grid;
+		grid-template-columns: repeat(19, 1fr);
+		grid-template-rows: repeat(33, 1fr);
+		gap: 0px 0px;
+		grid-template-areas:
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . .";
+		grid-area: music;
+	}
+
+	.test1 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+	.test2 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+	.test3 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+
+	/* 텔 유어 월드 */
+	._1 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 33;
+	}
+
+	/* 로키 */
+	._2 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 테오 */
+	._3 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 불꽃 */
+	._6 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 타임머신 */
+	._8 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 해피 신시사이저 */
+	._10 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 비바해피 */
+	._11 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 노스탤로직 */
+	._13 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 드롭 팝 캔디 */
+	._15 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 내일의 별하늘 초계반 */
+	._18 {
+		/* 가로 */
+		grid-column-start: 2;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 샤를 */
+	._19 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 탈법록 */
+	._21 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 생명에게 미움받고 있어 */
+	._22 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 열등상등 */
+	._26 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 그냥 친구로 지내자 */
+	._27 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 닥터 펑크 비트 */
+	._28 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 미라클 페인트 */
+	._36 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 브리키의 댄스 */
+	._38 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 스위트 매직 */
+	._41 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 넥스트 네스트 */
+	._43 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 손에 손 잡고 */
+	._44 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 삼구뮤직 */
+	._45 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 26;
+	}
+
+	/* 그린 라이츠 세레나데 */
+	._46 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 멜트 */
+	._47 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 월드 이즈 마인 */
+	._48 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 하츠네 미쿠의 소실 */
+	._49 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 2;
+	}
+
+	/* 블레싱 */
+	._50 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 세카이는 아직 시작조차 하지 않았다 */
+	._51 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 감자가 되어가 */
+	._52 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 레디 스테디 */
+	._54 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 포워드 */
+	._55 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 아이돌 신예대 */
+	._57 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 후회라 쓰고 미래 */
+	._60 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 휴대연화 */
+	._61 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 잭팟 새드걸 */
+	._62 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 니들 */
+	._63 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 스텔라 */
+	._64 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 헬로/하와유 */
+	._66 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 자상무색 */
+	._67 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 32;
+	}
+
+	/* 댄스 로봇 댄스 */
+	._68 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 취급주의 */
+	._69 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 멜티랜드 나이트메어 */
+	._70 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 누덕누덕 스타카토 */
+	._71 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 26;
+	}
+
+	/* 블레스 유어 블레스 */
+	._72 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 니아 */
+	._73 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 혼자 놀이 엔비 */
+	._74 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 갯나리 해저담 */
+	._75 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 세카이 */
+	._76 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 워워워월드 */
+	._77 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 모험의 서가 사라졌어요! */
+	._78 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 야화 디세이브 */
+	._81 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 어라이브 */
+	._82 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 김미 김미 */
+	._83 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 정키 나이트타운 오케스트라 */
+	._84 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 레이아 */
+	._85 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 온더락 */
+	._86 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 연애재판 */
+	._87 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 츄루리라 */
+	._88 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 컬러 오브 드롭스 */
+	._89 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 끝없는 잿빛으로 */
+	._90 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 드라마트루기 */
+	._91 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 소녀해부 */
+	._92 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 푸르게 달려라! */
+	._93 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 존나 아파 */
+	._94 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 위풍당당 */
+	._95 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 와이가 와이에게 */
+	._96 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 맑기를 기다려 */
+	._97 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 로스트원의 호곡 */
+	._98 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 모어! 점프! 모어! */
+	._99 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 에코 */
+	._100 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 래드 독스*/
+	._101 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 유령 도쿄 */
+	._102 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 무지개색 스토리즈 */
+	._103 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 상드리용 */
+	._104 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 원스 어폰 어 드림 */
+	._105 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 원하시는 대로 */
+	._106 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 밀크 크라운 온 소네치카 */
+	._107 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 사랑받지 않아도 네가 있어 */
+	._108 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 울려퍼져라 */
+	._109 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 천본앵 */
+	._110 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 커틀러리 */
+	._111 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 천사의 클로버 */
+	._112 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 롤링걸 */
+	._113 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 겉속 러버즈 */
+	._114 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 언노운 마더 구스 */
+	._115 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 아이디스마일 */
+	._116 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 오즈 앤드 엔즈 */
+	._117 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 헬로 플래닛 */
+	._118 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 월즈 앤드 댄스홀 */
+	._119 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 가지 마 */
+	._120 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 로미오와 신데렐라 */
+	._121 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 26;
+	}
+
+	/* 포지티브 댄스 타임 */
+	._122 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 드리밍 츄츄 */
+	._123 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 미쿠미쿠하게 해줄게 */
+	._124 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 보카 델라 베리타 */
+	._125 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 시네마 */
+	._126 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 톤데모 원더즈 */
+	._127 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 브랜드 뉴 데이 */
+	._128 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 비터 초코 데코레이션 */
+	._129 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 프롬 도쿄 */
+	._130 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 하츠네 미쿠의 격창 */
+	._131 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* '일' */
+	._132 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 32;
+	}
+
+	/* 악마의 춤추는 법 */
+	._133 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 텔레캐스터 비보이 */
+	._134 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 육조년과 하룻밤 이야기 */
+	._135 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 칠드런 레코드 */
+	._136 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 꽃을 노래해 */
+	._137 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 킹 */
+	._138 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 밤에 달리다 */
+	._139 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 아이스 드롭 */
+	._140 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 군청찬가 */
+	._141 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 재생 */
+	._142 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 트래픽 잼 */
+	._143 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 사랑의 머태리얼 */
+	._144 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 32;
+	}
+
+	/* 베놈 */
+	._145 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 리모컨 */
+	._146 {
+		/* 가로 */
+		grid-column-start: 14;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 꼭두각시 피에로 */
+	._147 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 레이 */
+	._148 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 연주하여 밝히는 하늘 */
+	._149 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 32;
+	}
+
+	/* 토키오 펑카 */
+	._150 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 거품미래 */
+	._151 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 누군가의 심장이 될 수 있다면 */
+	._152 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 미쿠 */
+	._153 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 지구 최후의 고백을 */
+	._154 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 심박수#0822 */
+	._155 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 비트 이터 */
+	._156 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 마슈마리 */
+	._157 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 넌센스 문학 */
+	._158 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 스테이지 오브 세카이 */
+	._159 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 쇼타임 룰러 */
+	._160 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 매직 넘버 */
+	._161 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 15;
+	}
+
+	/* 엔드마크에 희망과 눈물을 붙여서 */
+	._162 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 2;
+	}
+
+	/* 더 엠퍼러 */
+	._163 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+
+	/* 돈 파이트 더 뮤직 */
+	._164 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+
+	/* 그랬지! */
+	._165 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 글로리 스테디 고! */
+	._166 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 얼터 에고 */
+	._167 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 달링 댄스 */
+	._168 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 소녀 레이 */
+	._169 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 빌런 */
+	._170 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 아지랑이 데이즈 */
+	._171 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 해피 할로윈 */
+	._172 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 유성의 파루스 */
+	._173 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 이 얼 팬클럽 */
+	._174 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 친애하는 도플갱어 */
+	._175 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 머신건 포엠 돌 */
+	._176 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 우견의 나비 */
+	._177 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 닛코리 조사대의 테마 */
+	._178 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 노심융해 */
+	._179 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 26;
+	}
+
+	/* 미래 */
+	._180 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 24;
+	}
+
+	/* 사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해 */
+	._181 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 플라이어 */
+	._182 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 픽서 */
+	._183 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 헬로, 월드 */
+	._184 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 식 오브 하우스! */
+	._185 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 하츠네 천지 개벽 신화 */
+	._186 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 5;
+	}
+
+	/* 로워 */
+	._187 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 마음예보 */
+	._188 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 노마드 */
+	._189 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 악의 딸 */
+	._190 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 악의 하인 */
+	._191 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 떠나는 이들의 왈츠 */
+	._192 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 25;
+	}
+
+	/* 월드와이드 원더 */
+	._193 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 망상감상대상연맹 */
+	._194 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 패셔넷 쓰리 닷 센세이션 */
+	._195 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 오더 메이드 */
+	._196 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 31;
+	}
+
+	/* 라스트 스코어 */
+	._197 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 굿바이 선언 */
+	._198 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 고스트 룰 */
+	._199 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 5;
+	}
+
+	/* 갈란드 */
+	._200 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 신의 뜻대로 */
+	._201 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 트리콜로주 */
+	._203 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 시끄럿 */
+	._204 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 22;
+	}
+
+	/* 춤 */
+	._205 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 19;
+	}
+
+	/* 너의 색 마린 스노우 */
+	._206 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 피키피키 */
+	._207 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 우린 아직 언더그라운드 */
+	._208 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 메타모 리본 */
+	._209 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 33;
+	}
+
+	/* 비와 페트라 */
+	._210 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 20;
+	}
+
+	/* 이프 */
+	._211 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 별하늘의 멜로디 */
+	._212 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 뱀파이어 */
+	._213 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 쥬다스 */
+	._215 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 23;
+	}
+
+	/* 루카루카 나이트피버 */
+	._216 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 메류 */
+	._218 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 30;
+	}
+
+	/* 모래행성 */
+	._219 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 도넛 홀 */
+	._220 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 마트료시카 */
+	._221 {
+		/* 가로 */
+		grid-column-start: 14;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 피아노 포르테 스캔들 */
+	._222 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 천년의 독주가 */
+	._223 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 28;
+	}
+
+	/* 88별 */
+	._224 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 원셀프 */
+	._227 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 뇌장작렬걸 */
+	._229 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 샐러맨더 */
+	._230 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 아이덴티티 */
+	._231 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 파란 물감 */
+	._232 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 29;
+	}
+
+	/* 코스모 스파이스 */
+	._233 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 도쿠가와 컵누들 금지령 */
+	._234 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 검은 바위 투척수 */
+	._238 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 27;
+	}
+
+	/* 월광 */
+	._239 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 나팔꽃 질 무렵에 */
+	._241 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 33;
+	}
+
+	/* 어웨이크 나우 */
+	._244 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 아훔의 비트 */
+	._245 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 21;
+	}
+
+	/* 버그 */
+	._248 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 우리들의 16비트 전쟁 */
+	._249 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 미완성찬가 */
+	._254 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+}
+
+@media (orientation: landscape) {
+	img {
+		width: 100%;
+		/* position: absolute; */
+	}
+
+	.container {
+		display: grid;
+		grid-auto-columns: 1fr;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"logo level"
+			"skill music";
+	}
+
+	.container>* {
+		background-color: blueviolet;
+		font-size: 13px;
+		color: white;
+		font-weight: bold;
+		/* grid-gap: 3px; */
+	}
+
+	.container>level {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.container>skill {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.container>music {
+		background-color: wheat;
+	}
+
+
+	logo {
+		grid-area: logo;
+	}
+
+	level {
+		display: grid;
+		grid-template-columns: repeat(33, 1fr);
+		grid-template-rows: 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+
+		grid-area: level;
+	}
+
+	skill {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(19, 1fr);
+		gap: 0px 0px;
+		grid-template-areas:
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			"."
+			".";
+		grid-area: skill;
+	}
+
+	music {
+		display: grid;
+		grid-template-columns: repeat(33, 1fr);
+		grid-template-rows: repeat(19, 1fr);
+		gap: 0px 0px;
+		grid-template-areas:
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+			". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+		grid-area: music;
+	}
+
+	/* 텔 유어 월드 */
+	._1 {
+		/* 가로 */
+		grid-column-start: 33;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 로키 */
+	._2 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 테오 */
+	._3 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 불꽃 */
+	._6 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 타임머신 */
+	._8 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 해피 신시사이저 */
+	._10 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 비바해피 */
+	._11 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 노스탤로직 */
+	._13 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 드롭 팝 캔디 */
+	._15 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 내일의 별하늘 초계반 */
+	._18 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 18;
+	}
+
+	/* 샤를 */
+	._19 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 탈법록 */
+	._21 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 생명에게 미움받고 있어 */
+	._22 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 열등상등 */
+	._26 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 그냥 친구로 지내자 */
+	._27 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 닥터 펑크 비트 */
+	._28 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 미라클 페인트 */
+	._36 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 브리키의 댄스 */
+	._38 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 스위트 매직 */
+	._41 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 넥스트 네스트 */
+	._43 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 손에 손 잡고 */
+	._44 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 삼구뮤직 */
+	._45 {
+		/* 가로 */
+		grid-column-start: 26;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 그린 라이츠 세레나데 */
+	._46 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 멜트 */
+	._47 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 월드 이즈 마인 */
+	._48 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 하츠네 미쿠의 소실 */
+	._49 {
+		/* 가로 */
+		grid-column-start: 2;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 블레싱 */
+	._50 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 세카이는 아직 시작조차 하지 않았다 */
+	._51 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 감자가 되어가 */
+	._52 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 레디 스테디 */
+	._54 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 포워드 */
+	._55 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 아이돌 신예대 */
+	._57 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 후회라 쓰고 미래 */
+	._60 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 휴대연화 */
+	._61 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 잭팟 새드걸 */
+	._62 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 니들 */
+	._63 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 스텔라 */
+	._64 {
+		/* 가로 */
+		grid-column-start: 14;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 헬로/하와유 */
+	._66 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 자상무색 */
+	._67 {
+		/* 가로 */
+		grid-column-start: 32;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 댄스 로봇 댄스 */
+	._68 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 취급주의 */
+	._69 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 멜티랜드 나이트메어 */
+	._70 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 누덕누덕 스타카토 */
+	._71 {
+		/* 가로 */
+		grid-column-start: 26;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 블레스 유어 블레스 */
+	._72 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 니아 */
+	._73 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 혼자 놀이 엔비 */
+	._74 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 갯나리 해저담 */
+	._75 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 세카이 */
+	._76 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 워워워월드 */
+	._77 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 모험의 서가 사라졌어요! */
+	._78 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 야화 디세이브 */
+	._81 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 어라이브 */
+	._82 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 김미 김미 */
+	._83 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 정키 나이트타운 오케스트라 */
+	._84 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 레이아 */
+	._85 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 온더락 */
+	._86 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 연애재판 */
+	._87 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 츄루리라 */
+	._88 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 컬러 오브 드롭스 */
+	._89 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 끝없는 잿빛으로 */
+	._90 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 드라마트루기 */
+	._91 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 소녀해부 */
+	._92 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 푸르게 달려라! */
+	._93 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 존나 아파 */
+	._94 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 위풍당당 */
+	._95 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 와이가 와이에게 */
+	._96 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 맑기를 기다려 */
+	._97 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 로스트원의 호곡 */
+	._98 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 모어! 점프! 모어! */
+	._99 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 에코 */
+	._100 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 래드 독스*/
+	._101 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 유령 도쿄 */
+	._102 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 무지개색 스토리즈 */
+	._103 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 상드리용 */
+	._104 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 원스 어폰 어 드림 */
+	._105 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 원하시는 대로 */
+	._106 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 밀크 크라운 온 소네치카 */
+	._107 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 사랑받지 않아도 네가 있어 */
+	._108 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 울려퍼져라 */
+	._109 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 천본앵 */
+	._110 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 커틀러리 */
+	._111 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 2;
+	}
+
+	/* 천사의 클로버 */
+	._112 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 롤링걸 */
+	._113 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 겉속 러버즈 */
+	._114 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 언노운 마더 구스 */
+	._115 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 아이디스마일 */
+	._116 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 오즈 앤드 엔즈 */
+	._117 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 헬로 플래닛 */
+	._118 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 월즈 앤드 댄스홀 */
+	._119 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 가지 마 */
+	._120 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 로미오와 신데렐라 */
+	._121 {
+		/* 가로 */
+		grid-column-start: 26;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 포지티브 댄스 타임 */
+	._122 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 드리밍 츄츄 */
+	._123 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 미쿠미쿠하게 해줄게 */
+	._124 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 보카 델라 베리타 */
+	._125 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 시네마 */
+	._126 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 톤데모 원더즈 */
+	._127 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 브랜드 뉴 데이 */
+	._128 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 비터 초코 데코레이션 */
+	._129 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 프롬 도쿄 */
+	._130 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 하츠네 미쿠의 격창 */
+	._131 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* '일' */
+	._132 {
+		/* 가로 */
+		grid-column-start: 32;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 악마의 춤추는 법 */
+	._133 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 텔레캐스터 비보이 */
+	._134 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 육조년과 하룻밤 이야기 */
+	._135 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 칠드런 레코드 */
+	._136 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 꽃을 노래해 */
+	._137 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 킹 */
+	._138 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 밤에 달리다 */
+	._139 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 아이스 드롭 */
+	._140 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 군청찬가 */
+	._141 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 재생 */
+	._142 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 트래픽 잼 */
+	._143 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 사랑의 머태리얼 */
+	._144 {
+		/* 가로 */
+		grid-column-start: 32;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 베놈 */
+	._145 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 리모컨 */
+	._146 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 6;
+	}
+
+	/* 꼭두각시 피에로 */
+	._147 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 레이 */
+	._148 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 연주하여 밝히는 하늘 */
+	._149 {
+		/* 가로 */
+		grid-column-start: 32;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 토키오 펑카 */
+	._150 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 거품미래 */
+	._151 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 누군가의 심장이 될 수 있다면 */
+	._152 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 미쿠 */
+	._153 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 지구 최후의 고백을 */
+	._154 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 심박수#0822 */
+	._155 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 비트 이터 */
+	._156 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 마슈마리 */
+	._157 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 넌센스 문학 */
+	._158 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 스테이지 오브 세카이 */
+	._159 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 쇼타임 룰러 */
+	._160 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 매직 넘버 */
+	._161 {
+		/* 가로 */
+		grid-column-start: 15;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 엔드마크에 희망과 눈물을 붙여서 */
+	._162 {
+		/* 가로 */
+		grid-column-start: 2;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 더 엠퍼러 */
+	._163 {
+		/* 가로 */
+		grid-column-start: 1;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 돈 파이트 더 뮤직 */
+	._164 {
+		/* 가로 */
+		grid-column-start: 1;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 그랬지! */
+	._165 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 글로리 스테디 고! */
+	._166 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 얼터 에고 */
+	._167 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 달링 댄스 */
+	._168 {
+		/* 가로 */
+		grid-column-start: 14;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 소녀 레이 */
+	._169 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 빌런 */
+	._170 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 아지랑이 데이즈 */
+	._171 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 해피 할로윈 */
+	._172 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 유성의 파루스 */
+	._173 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 이 얼 팬클럽 */
+	._174 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 친애하는 도플갱어 */
+	._175 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 머신건 포엠 돌 */
+	._176 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 16;
+	}
+
+	/* 우견의 나비 */
+	._177 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 닛코리 조사대의 테마 */
+	._178 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 노심융해 */
+	._179 {
+		/* 가로 */
+		grid-column-start: 26;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 미래 */
+	._180 {
+		/* 가로 */
+		grid-column-start: 24;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해사랑해 */
+	._181 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 플라이어 */
+	._182 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 픽서 */
+	._183 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 헬로, 월드 */
+	._184 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 17;
+	}
+
+	/* 식 오브 하우스! */
+	._185 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 하츠네 천지 개벽 신화 */
+	._186 {
+		/* 가로 */
+		grid-column-start: 5;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 로워 */
+	._187 {
+		/* 가로 */
+		grid-column-start: 9;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 마음예보 */
+	._188 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 노마드 */
+	._189 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 악의 딸 */
+	._190 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 악의 하인 */
+	._191 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 떠나는 이들의 왈츠 */
+	._192 {
+		/* 가로 */
+		grid-column-start: 25;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 월드와이드 원더 */
+	._193 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 망상감상대상연맹 */
+	._194 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 패셔넷 쓰리 닷 센세이션 */
+	._195 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 오더 메이드 */
+	._196 {
+		/* 가로 */
+		grid-column-start: 31;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 라스트 스코어 */
+	._197 {
+		/* 가로 */
+		grid-column-start: 12;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 굿바이 선언 */
+	._198 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 고스트 룰 */
+	._199 {
+		/* 가로 */
+		grid-column-start: 5;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 갈란드 */
+	._200 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 신의 뜻대로 */
+	._201 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 트리콜로주 */
+	._203 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 시끄럿 */
+	._204 {
+		/* 가로 */
+		grid-column-start: 22;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 춤 */
+	._205 {
+		/* 가로 */
+		grid-column-start: 19;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 너의 색 마린 스노우 */
+	._206 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 피키피키 */
+	._207 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 우린 아직 언더그라운드 */
+	._208 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 메타모 리본 */
+	._209 {
+		/* 가로 */
+		grid-column-start: 33;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 비와 페트라 */
+	._210 {
+		/* 가로 */
+		grid-column-start: 20;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 이프 */
+	._211 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 별하늘의 멜로디 */
+	._212 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 뱀파이어 */
+	._213 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 쥬다스 */
+	._215 {
+		/* 가로 */
+		grid-column-start: 23;
+		/* 세로 */
+		grid-row-start: 3;
+	}
+
+	/* 루카루카 나이트피버 */
+	._216 {
+		/* 가로 */
+		grid-column-start: 18;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 메류 */
+	._218 {
+		/* 가로 */
+		grid-column-start: 30;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 모래행성 */
+	._219 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 도넛 홀 */
+	._220 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 12;
+	}
+
+	/* 마트료시카 */
+	._221 {
+		/* 가로 */
+		grid-column-start: 3;
+		/* 세로 */
+		grid-row-start: 14;
+	}
+
+	/* 피아노 포르테 스캔들 */
+	._222 {
+		/* 가로 */
+		grid-column-start: 14;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 천년의 독주가 */
+	._223 {
+		/* 가로 */
+		grid-column-start: 28;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 88별 */
+	._224 {
+		/* 가로 */
+		grid-column-start: 16;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 원셀프 */
+	._227 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 뇌장작렬걸 */
+	._229 {
+		/* 가로 */
+		grid-column-start: 6;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 샐러맨더 */
+	._230 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 11;
+	}
+
+	/* 아이덴티티 */
+	._231 {
+		/* 가로 */
+		grid-column-start: 11;
+		/* 세로 */
+		grid-row-start: 13;
+	}
+
+	/* 파란 물감 */
+	._232 {
+		/* 가로 */
+		grid-column-start: 29;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 코스모 스파이스 */
+	._233 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 7;
+	}
+
+	/* 도쿠가와 컵누들 금지령 */
+	._234 {
+		/* 가로 */
+		grid-column-start: 8;
+		/* 세로 */
+		grid-row-start: 8;
+	}
+
+	/* 검은 바위 투척수 */
+	._238 {
+		/* 가로 */
+		grid-column-start: 27;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 월광 */
+	._239 {
+		/* 가로 */
+		grid-column-start: 17;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 나팔꽃 질 무렵에 */
+	._241 {
+		/* 가로 */
+		grid-column-start: 33;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 어웨이크 나우 */
+	._244 {
+		/* 가로 */
+		grid-column-start: 13;
+		/* 세로 */
+		grid-row-start: 4;
+	}
+
+	/* 아훔의 비트 */
+	._245 {
+		/* 가로 */
+		grid-column-start: 21;
+		/* 세로 */
+		grid-row-start: 1;
+	}
+
+	/* 버그 */
+	._248 {
+		/* 가로 */
+		grid-column-start: 7;
+		/* 세로 */
+		grid-row-start: 10;
+	}
+
+	/* 우리들의 16비트 전쟁 */
+	._249 {
+		/* 가로 */
+		grid-column-start: 4;
+		/* 세로 */
+		grid-row-start: 9;
+	}
+
+	/* 미완성찬가 */
+	._254 {
+		/* 가로 */
+		grid-column-start: 10;
+		/* 세로 */
+		grid-row-start: 13;
+	}
 }

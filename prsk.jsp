@@ -12,8 +12,6 @@ function upload() {
 		} else {
 			iSet=i;
 		}
-		// document.write("<img class='0' id="+i+" src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
-		// document.write("<img class='_"+i+"' src='./img/" + iSet +".webp' style='width:10%' onclick='changeStyle(" + i + "); save();' onerror=\"this.style.display='none'\">");
 
 		var m = document.getElementById("music");
 		var x = document.createElement("img");
