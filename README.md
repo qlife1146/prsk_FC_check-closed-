@@ -14,4 +14,4 @@
 ~~도메인 등록을 완료해서 주소가 짧아졌습니다.
 www.prsk-fc.tk~~
 
-요금제 이슈로 사용을 종료합니다. 대신 [prsk_FC_cehck](https://github.com/qlife1146/prsk_FC_check/deployments/activity_log?environment=github-pages)로 사용이 가능합니다.
+요금제 이슈로 사용을 종료합니다. 대신 [prsk_FC_cehck](https://qlife1146.github.io/prsk_FC_check-closed-/)로 사용이 가능합니다.
